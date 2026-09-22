@@ -1,9 +1,9 @@
-// import React from "react"
-import SelfIntro from "./Selfintro"
+// import React from "react";
+import APPcom from "./Components/AppComponent"
 export default function App() {
   return (
     <div>
-      <SelfIntro />
+      <APPcom />
     </div>
   )
 }
