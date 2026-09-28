@@ -1,9 +1,10 @@
-import Form from "./Components/Form"
-
+import UserList from "./Components/UserList"
+import Img from "./Components/Uploadimg"
 export default function App() {
   return (
     <div>
-      <Form />
+      <UserList />
+      <Img />
     </div>
   )
 }
