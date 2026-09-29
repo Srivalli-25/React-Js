@@ -1,10 +1,13 @@
-import UserList from "./Components/UserList"
-import Img from "./Components/Uploadimg"
+import CounterProvider from "./Components/CounterProvider";
+import Counter from "./Components/Counterr";
+import CounterButtons from "./Components/CounterButtons";
 export default function App() {
   return (
-    <div>
-      <UserList />
-      <Img />
-    </div>
-  )
+    <CounterProvider>
+      <div className="app">
+        <Counter />
+        <CounterButtons />
+      </div>
+    </CounterProvider>
+  );
 }
