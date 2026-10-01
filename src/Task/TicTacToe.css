@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f3e8ff;
+    min-height: 100vh;
+}
+h1{
+    margin: 50px 0 25px;
+    font-size: 50px;
+    color: #4c1d95;
+}
+h2
+{
+    margin: 15px;
+    font-size: 26px;
+    color: #5b21b6;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+    grid-template-rows: repeat(3,80px);
+    gap: 7px;
+    justify-content: center;
+    margin: 25px auto;
+}
+.board>button{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    background-color: #e9d5ff;
+    color: #4c1d95;
+    border: 2px solid #c084fc;
+    border-radius: 8px;
+    transition: 0.2s;
+    /* background: linear-gradient(
+    rgba(176, 87, 132, 0.85),
+    rgba(165, 48, 144, 0.85));
+  color: #eeebed; */
+    /* border: 2px solid rgb(247, 238, 238); */
+}
+.board>button.x{
+    color: #db2777;
+}
+.board>button.o{
+    color: #2563eb;
+}
+.board>button:hover{
+    background-color: #d8b4fe;
+    transform: scale(1.05);
+}
+.restart-btn{
+    padding: 11px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #1e293b;
+    color: white;
+    margin-top: 10px;
+}
+.restart-btn:hover{
+    background-color: #334155;
+}
+input{
+    padding: 12px;
+    margin: 8px;
+    width: 190px;
+    font-size: 16px;
+    color: #333333;
+    background-color: white;
+    border: 2px solid #c4b5fd;
+    border-radius: 8px;
+    outline: none;
+}
+input:focus{
+    border-color: #6d28d9;
+
+}
+button{
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #6D28D9;
+    color: white;
+}
+button:hover{
+    background-color: #5B21B6;
+}
+.start-card{
+    width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:0 5px 15px rgba(76,29,149,0.15);
+}
+.start-card>h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.start-card>input{
+    display: block;
+    margin: 10px auto;
+}
+.start-card>button {
+    background-color: #6d28d9;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.start-card>button:hover {
+    background-color: #5b21b6;
+    transform: scale(1.05);
+}

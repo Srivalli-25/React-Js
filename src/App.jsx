@@ -15,7 +15,7 @@ import Mountains from "./Router/Mountains";
 import Historical from "./Router/HistoricalPlaces";
 import Wildlife from "./Router/Wildlife";
 import International from "./Router/International";
-import './App.css';
+import TicTacToe from "./Task/TicTacToe";
 
 
 export default function App() {
@@ -29,7 +29,6 @@ export default function App() {
         <CounterButtons />
       </div>
     </CounterProvider>
-    </div>)}
     <BrowserRouter>
     <div className="header">
       <NavLink to={"/Home"}>Home</NavLink>
@@ -60,6 +59,8 @@ export default function App() {
       <Route path="/Contact" element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
+        </div>)}
+        <TicTacToe />
     </div>
     
   );
