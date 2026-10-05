@@ -15,7 +15,10 @@ import Mountains from "./Router/Mountains";
 import Historical from "./Router/HistoricalPlaces";
 import Wildlife from "./Router/Wildlife";
 import International from "./Router/International";
+import User from "./Components/User";
+// import "./App.css"
 import TicTacToe from "./Task/TicTacToe";
+import UserDetails from "./Components/UserDetails";
 
 
 export default function App() {
@@ -29,7 +32,8 @@ export default function App() {
         <CounterButtons />
       </div>
     </CounterProvider>
-    <BrowserRouter>
+            <TicTacToe />
+      <BrowserRouter>
     <div className="header">
       <NavLink to={"/Home"}>Home</NavLink>
       <NavLink to={"/About"}>About</NavLink>
@@ -59,8 +63,13 @@ export default function App() {
       <Route path="/Contact" element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
-        </div>)}
-        <TicTacToe />
+    </div>)}
+    <BrowserRouter>
+    <Routes>
+      <Route path="/users" element={<User/>}/>
+      <Route path="/users/:id" element={<UserDetails/>} />
+    </Routes>
+    </BrowserRouter>
     </div>
     
   );
