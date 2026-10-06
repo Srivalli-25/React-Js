@@ -16,11 +16,10 @@ import Historical from "./Router/HistoricalPlaces";
 import Wildlife from "./Router/Wildlife";
 import International from "./Router/International";
 import User from "./Components/User";
-// import "./App.css"
+import "./App.css"
 import TicTacToe from "./Task/TicTacToe";
 import UserDetails from "./Components/UserDetails";
-
-
+import Users from './Components/Users'
 export default function App() {
   const display = false
   return (
@@ -33,6 +32,13 @@ export default function App() {
       </div>
     </CounterProvider>
             <TicTacToe />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/users" element={<User/>}/>
+      <Route path="/users/:id" element={<UserDetails/>} />
+    </Routes>
+    </BrowserRouter>
+    </div>)}
       <BrowserRouter>
     <div className="header">
       <NavLink to={"/Home"}>Home</NavLink>
@@ -43,6 +49,7 @@ export default function App() {
       <NavLink to={"/Gallery"}>Gallery</NavLink>
       <NavLink to={"/TravelTips"}>TravelTips</NavLink>
       <NavLink to={"/Contact"}>Contact</NavLink>
+      <NavLink to={"/users"}>Users</NavLink>
 
     </div>
     <Routes>
@@ -61,13 +68,7 @@ export default function App() {
       <Route path="/Gallery" element={<Gallery/>}/>
       <Route path="/TravelTips" element={<TravelTips/>}/>
       <Route path="/Contact" element={<Contact/>}/>
-    </Routes>
-    </BrowserRouter>
-    </div>)}
-    <BrowserRouter>
-    <Routes>
-      <Route path="/users" element={<User/>}/>
-      <Route path="/users/:id" element={<UserDetails/>} />
+      <Route path="/users" element={<Users />}/>
     </Routes>
     </BrowserRouter>
     </div>

@@ -1,0 +1,63 @@
+.users-container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+.users-container>h1{
+    font-size: 50px;
+    font-weight: 60px;
+    margin-bottom: 45px;
+    color:#CD8CA8;
+}
+.table-container{
+    width: 100%;
+    overflow-x: auto;
+}
+.users-table{
+    width: 100%;
+    border-collapse:collapse;
+    background-color: white;
+}
+.users-table th,
+.users-table td{
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+.users-table th{
+    background-color: #b18db6;
+    color: white;
+}
+.users-table tr:nth-child(even){
+    background-color:#f1dbf4;
+}
+.pagination{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pagination>button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color:#974598 ;
+    cursor: pointer;
+    border: 1px solid #924784;
+    font-size: 15px;
+    transition: all 0.25s ease-in-out;
+}
+.pagination>button:hover{
+    background-color: #780b53;
+    color: white;
+}
+.pagination>button:disabled{
+    background-color: #780b53;
+    color: white;
+    cursor: not-allowed;
+}
+.page-number{
+    font-weight: bold;
+    color: #780b53;
+}

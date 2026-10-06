@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,11 +40,7 @@ h2
     border: 2px solid #c084fc;
     border-radius: 8px;
     transition: 0.2s;
-    /* background: linear-gradient(
-    rgba(176, 87, 132, 0.85),
-    rgba(165, 48, 144, 0.85));
-  color: #eeebed; */
-    /* border: 2px solid rgb(247, 238, 238); */
+    
 }
 .board>button.x{
     color: #db2777;
@@ -125,4 +121,4 @@ button:hover{
 .start-card>button:hover {
     background-color: #5b21b6;
     transform: scale(1.05);
-}
+} */
