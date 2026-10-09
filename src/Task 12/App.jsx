@@ -77,19 +77,12 @@
     
 //   );
 // }
-import ComponentA from './Component/ComponentA';
-import ComponentB from './Component/ComponentB';
-import "./Component/ReduxForm.css";
+import Users1 from './Users1'
 
 export default function App() {
   return (
-    <div className='app-container'>
-      <h1>Registration Dashboard</h1>
-      <div className="dashboard">
-        <ComponentA />
-        <ComponentB />
-      </div>
+    <div>
+      <Users1 />
     </div>
-  )
+  );
 }
-
